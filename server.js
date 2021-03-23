@@ -12,6 +12,8 @@ app.post('/kr',(req,res,next)=>{
     res.end();
 })
 
-app.listen(4000,()=>{
+const PORT = process.env.PORT || 4000;
+
+app.listen(PORT,()=>{
     return console.log("its still  running")
 })
