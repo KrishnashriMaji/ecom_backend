@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.get('/krish',(req,res,next)=>{
+app.get('/',(req,res,next)=>{
     res.end("its first api")
 })
 
