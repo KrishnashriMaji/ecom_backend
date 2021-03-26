@@ -5,6 +5,14 @@ app.get('/',(req,res,next)=>{
     res.end("its first api")
 })
 
+app.get('/myName',(req,res,next)=>{
+    res.status(200);
+    res.send({
+        'name' : "Krishnashri Maji"
+    })
+    res.end();
+})
+
 app.post('/kr',(req,res,next)=>{
     // res.end("its first api")
     res.status('201');
